@@ -1,0 +1,12 @@
+Nodos_orig <-read.csv("data/Ejemplo_Tequesquitengo/Nodos.csv", header = T)           #Se cargan todos los Nodos (Principales y Secundarios) con la numeracion inicial.
+Triangulos_orig <-read.csv("data/Ejemplo_Tequesquitengo/Triangulos.csv", header=T)   #Se cargan los triangulos con la numeracion inicial.
+
+Nomb_proj<-c("Ejemplo Tequesquitengo")
+dx_ma<-10 					#dx para graficos de matriz de adyacencia.
+x_nudg=100; y_nudg=100 				#Cuanto se despega el label de nodos de los nodos en el mapa
+nod_size=0.6; triang_size=0.8; n_size=0.6    	#Tamano del label de los nodos y de los triangulos
+epsg_proj=3857 					#Si se tiene se pone el numero sino se ubica un "0"
+
+
+El fichero (Madj_orig_Ejemplo_Tequesquitengo.csv) es la matriz de adyacencia de la numeración original. [Se obtiene con la corrida del programa], tambien se incluye en *.txt
+El fichero (Madj_rcm_Ejemplo_Tequesquitengo.csv) es la matriz de adyacencia de la numeración calculada con el método Rcm. [Se obtiene con la corrida del programa]

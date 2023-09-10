@@ -1,0 +1,15 @@
+
+
+Nodos_orig <-read.csv("data/Ejemplo_2/Nodos.csv", header = T)           #Se cargan todos los Nodos (Principales y Secundarios) con la numeracion inicial.
+Triangulos_orig <-read.csv("data/Ejemplo_2/Triangulos.csv", header=T)   #Se cargan los triangulos con la numeracion inicial.
+
+Nomb_proj<-c("Ejemplo 1")
+dx_ma<-1 					#dx para graficos de matriz de adyacencia.
+x_nudg=0.5; y_nudg=0.5 				#Cuanto se despega el label de nodos de los nodos en el mapa
+nod_size=3; triang_size=4; n_size=2      	#Tamano del label de los nodos y de los triangulos
+epsg_proj=0 					#Si se tiene se pone el numero sino se ubica un "0"
+
+
+
+El fichero (Madj_orig_Ejemplo_2.csv) es la matriz de adyacencia de la numeración original. [Se obtiene con la corrida del programa]
+El fichero (Madj_rcm_Ejemplo_2.csv) es la matriz de adyacencia de la numeración calculada con el método Rcm. [Se obtiene con la corrida del programa]
